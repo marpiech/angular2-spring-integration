@@ -1,0 +1,7 @@
+server:
+    port: ${port:8082}
+
+logging:
+    file: ../log/hello-service.log
+    level:
+        org.springframework: OFF
