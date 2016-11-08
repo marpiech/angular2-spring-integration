@@ -1,8 +1,0 @@
-server:
-    port: ${port:8082}
-
-logging:
-    file: hello-service.log
-    level:
-        org.springframework: OFF
-        org.apache.catalina.core: OFF

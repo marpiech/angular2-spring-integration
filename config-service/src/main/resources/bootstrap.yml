@@ -1,0 +1,17 @@
+
+# PROFILES
+spring:
+    application.name: config-service
+
+# CONFIGURATION REPO
+    cloud:
+        config:
+            server:
+                git:
+                    uri: ${CONFIGURATION_REPOSITORY:https://github.com/marpiech/angular2-spring-integration-config}
+                default-label: ${CONFIGURATION_BRANCH:master}
+
+
+# EMBEDDED SERVER CONFIGURATION
+server:
+    port: ${port:8888}

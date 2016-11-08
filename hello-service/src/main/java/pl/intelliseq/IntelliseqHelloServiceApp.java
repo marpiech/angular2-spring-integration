@@ -15,7 +15,7 @@ public class IntelliseqHelloServiceApp {
 	
 	@RequestMapping("/")
     public String hello() {
-        return "{\"msg\": \"hello\"}";
+        return "{\"message\": \"hello\"}";
     }
 	
 }
