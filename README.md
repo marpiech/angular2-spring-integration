@@ -70,6 +70,7 @@ In other microservices add dependency
 compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '1.2.1.RELEASE'
 ```
 
+In the yaml git repository address was defined. In this repository we can store configurations of our servers using schema: servicename.yml
 ###### bootstrap.yaml
 ```yaml
 
@@ -88,5 +89,19 @@ server:
     port: ${port:8888}
 ```
 
-In the yaml git repository address was defined. In this repository we can store configurations of our servers using schema: servicename.yml
-
+#### RUNNING AND TESTING SERVICE
+```bash
+git clone https://github.com/marpiech/angular2-spring-integration.git
+cd angular2-spring-integration/
+git checkout lesson1
+gradle build -p hello-service/
+gradle build -p config-service/
+mkdir pid
+java -jar config-service/build/libs/config-service-0.1.jar &
+echo $! > pid/config-service.pid
+java -jar hello-service/build/libs/hello-service-0.1.jar &
+echo $! > pid/hello-service.pid
+curl localhost:8082
+kill `cat pid/hello-service.pid`
+kill `cat pid/config-service.pid`
+```
