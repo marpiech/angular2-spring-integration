@@ -13,7 +13,7 @@ public class IntelliseqHelloServiceApp {
 		SpringApplication.run(IntelliseqHelloServiceApp.class, args);
 	}
 	
-	@RequestMapping("/")
+	@RequestMapping("/hello")
     public String hello() {
         return "{\"message\": \"hello\"}";
     }

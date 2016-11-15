@@ -4,13 +4,14 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+        classpath("io.spring.gradle:dependency-management-plugin:0.4.0.RELEASE")
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
-
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -18,7 +19,7 @@ version = '0.1'
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Config-Service',
+        attributes 'Implementation-Title': 'Auth-Service',
                    'Implementation-Version': version
     }
 }
@@ -33,7 +34,10 @@ dependencies {
     
     // Spring boot
     compile group: 'org.springframework.boot', name: 'spring-boot', version: '1.4.1.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '1.4.1.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.4.1.RELEASE'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '1.2.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '1.4.1.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '1.2.1.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-security', version: '1.1.3.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-oauth2', version: '1.1.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-jwt', version: '1.0.5.RELEASE'
 }

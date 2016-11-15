@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="drawing.svg"
-   inkscape:export-filename="/home/marpiech/projects/angular/angular2-spring-integration/docs/lesson2.png"
+   inkscape:export-filename="/home/marpiech/projects/angular/angular2-spring-integration/docs/lesson3.png"
    inkscape:export-xdpi="68.459045"
    inkscape:export-ydpi="68.459045">
   <defs
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-146.64792"
-     inkscape:cy="548.83614"
+     inkscape:zoom="1.4"
+     inkscape:cx="508.33207"
+     inkscape:cy="389.24104"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -120,6 +120,38 @@
          x="740"
          y="718.58087"
          id="tspan4176-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.05890656px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle">service</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0007ff;stroke-width:21.79417992;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4166-3"
+       sodipodi:sides="6"
+       sodipodi:cx="624"
+       sodipodi:cy="890.64795"
+       sodipodi:r1="107.93309"
+       sodipodi:r2="93.472786"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.0943951"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 624,998.58104 -93.4728,-53.96654 0,-107.93309 93.4728,-53.96655 93.4728,53.96654 0,107.93309 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.05890656px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="624"
+       y="883.38312"
+       id="text4168-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="624"
+         y="883.38312"
+         id="tspan4172-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.05890656px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle">auth</tspan><tspan
+         sodipodi:role="line"
+         x="624"
+         y="919.70673"
+         id="tspan4176-5"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.05890656px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;text-anchor:middle">service</tspan></text>
   </g>
 </svg>
